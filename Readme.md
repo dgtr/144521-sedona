@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Раздобудько](https://up.htmlacademy.ru/adaptive/15/user/144521).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Ванчугов](https://htmlacademy.ru/profile/id94761).
 
 ---
 
