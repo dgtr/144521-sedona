@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Отзыв на гостиницу Седона</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="main-nav">
+        <ul class="navigation-list">
+          <li><a class="navigation-list__item" href="#">Главная</a></li>
+          <li><a class="navigation-list__item" href="#">Фото и видео</a></li>
+          <li><a class="navigation-list__item navigation-list__item--active" href="#">Форма отзыва</a></li>
+          <li><a class="navigation-list__item" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a></li>
+        </ul>
+        <!-- <div class="main-nav__logo"><img class="main-nav__logo-image" alt="Logo"></div> -->
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">Отзыв на гостиницу Седона</h1>
+      <section class="comment-proposal">
+        <h2 class="comment-proposal__title">Оставьте свой отзыв</h2>
+        <p class="comment-proposal__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </section>
+      <form class="comment-form" action="https://echo.htmlacademy.ru" method="post">
+        <fieldset class="form-group">
+          <legend class="form-group__title">Представьтесь:</legend>
+          <label class="form-group__label"  for="user-name">Имя*:</label>
+          <input class="form-group__input" type="text" name="user-name" id="user-name" placeholder="Петр">
+          <label class="form-group__label"  for="user-surname">Фамилия*:</label>
+          <input class="form-group__input" type="text" name="user-surname" id="user-surname" placeholder="Иванов">
+          <label class="form-group__label"  for="user-patronymic">Отчество*:</label>
+          <input class="form-group__input" type="text" name="user-patronymic" id="user-patronymic" placeholder="Александрович">
+        </fieldset>
+        <fieldset class="form-group">
+          <legend class="form-group__title">Контактная информация:</legend>
+          <label class="form-group__label"  for="telephone-number">Контактный телефон:</label>
+          <input class="form-group__input" type="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" name="tel" id="telephone-number" placeholder="Введите телефон">
+
+          <label class="form-group__label"  for="email">Электронная почта:</label>
+          <input class="form-group__input" type="email" name="email" id="email" placeholder="Введите e-mail">
+        </fieldset>
+        <fieldset class="form-group">
+          <legend class="form-group__title">Ваше общее впечатление:</legend>
+          <input class="form-group__input form-group__input--radio" type="radio" name="feeling" id="positive" value="Положительное" checked>
+          <label class="form-group__label form-group__label--radio" for="positive">Скорее положительное</label>
+          <input class="form-group__input form-group__input--radio" type="radio" name="feeling" id="negative" value="Отрицательное">
+          <label class="form-group__label form-group__label--radio" for="negative">Скорее отрицательное</label>
+          <input class="form-group__input form-group__input--radio" type="radio" name="feeling" id="unknown" value="Затрудняюсь ответить" checked>
+          <label class="form-group__label form-group__label--radio" for="unknown">Затрудняюсь ответить</label>
+        </fieldset>
+
+        <fieldset class="form-group">
+          <legend class="form-group__title">Посещенные достопримечательности:</legend>
+          <input class="form-group__input form-group__input--checkbox" type="checkbox" name="Devil bridge" id="Devil" checked>
+          <label class="form-group__label form-group__label--checkbox" for="Devil">Мост Дьявола</label>
+          <input class="form-group__input form-group__input--checkbox" type="checkbox" name="Mountain bell" id="Mountain" checked>
+          <label class="form-group__label form-group__label--checkbox" for="Mountain">Гора-Колокол</label>
+          <input class="form-group__input form-group__input--checkbox" type="checkbox" name="Slide park" id="Park" checked>
+          <label class="form-group__label form-group__label--checkbox" for="Park">Слайд-парк</label>
+          <input class="form-group__input form-group__input--checkbox" type="checkbox" name="Red rocks" id="rocks">
+          <label class="form-group__label form-group__label--checkbox" for="rocks">Красные скалы</label>
+        </fieldset>
+        <div class="form-group">
+          <h3 class="form-group__title">Опишите свои эмоции:</h3>
+          <textarea class="form-group__comment-text" name="comment" cols="50">Опишите подробно все свои восторги</textarea>
+        </div>
+        <button class="comment-form__button" type="submit">Отправить отзыв</button>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="social">
+        <b class="social__tag">#Visitsedona</b>
+        <ul class="social-list">
+          <li><a class="social-list__item social-list__item--twitter" href="#">Twitter</a></li>
+          <li><a class="social-list__item social-list__item-facebook" href="#">Facebook</a></li>
+          <li><a class="social-list__item social-list__item-youtube" href="#">Youtube</a></li>
+        </ul>
+        <div class="developer">
+          <p class="developer-description">Разработано <a href="https://htmlacademy.ru/intensive/adaptive"><img class="developer__logo" src="logo.svg" alt="HTML Academy"></a></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
